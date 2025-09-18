@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -15,8 +17,8 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
 
 
@@ -29,3 +31,144 @@
 
 /* jouw code */
 
+@font-face {
+	font-family: 'MyWebFont';
+	src: url('myfont.woff2') format('woff2'),
+		url('myfont.woff') format('woff');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100dvh;
+	overflow-x: hidden;
+}
+
+header section{
+	padding-bottom: 2em;
+	border-bottom:1px solid #a9a9a9;
+}
+
+header>section:first-of-type {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+/* Hiermee heb ik mijn header in 2 rijen verdeeld en aan de bovenkant van het scherm laten plakken. */
+
+header section>svg:first-of-type { 
+	width: 131px;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+} 
+/* Dit is om het Bruna logo te verplaatsen */
+
+header div:nth-of-type(1) {
+	display: flex;
+	justify-content: end;
+	margin-top: -1.75em;
+	margin-right: 1em;
+	gap: 0.75em;
+}
+/* Dit is voor de plaatsing van mijn iconen rechtboven in de hoek */
+
+header section a {
+	display: none;
+}
+/* Hiermee zet ik de tekst van iconen rechtboven uit. Dit is op het kleine scherm formaat uit, maar op het grote scherm formaat moet die aan gaan. */
+
+header div:nth-of-type(2) {
+	display: flex;
+	justify-content: space-evenly;
+}
+/* Hiermee zet ik de menu knop en zoekbalk naasdt elkaar */
+
+
+header button {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	width: 90px;
+	height: 50px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #a9a9a9;
+	gap: 0.5em;
+}
+/* Alle styling van de menu knop. */
+
+header button h2{
+	font-weight: 100;
+	font-size:medium;
+}
+/* Styling van tekst in menu knop. */
+
+header input {
+	padding-left: 1em;
+	width: 200px;
+	height: 50px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #a9a9a9;
+	color:#a9a9a9;
+	font-weight: 100;
+	font-size: medium;
+}
+/* Styling van de zoekbalk */
+
+main {
+	margin-top: 9.35em;
+	overflow-x: hidden;
+}
+
+main>section:first-of-type {
+	background-color: yellow;
+}
+
+main section:first-of-type a{
+color: black;
+text-decoration: none;
+font-family: sans-serif;
+font-weight: 800;
+font-size: large;
+display: flex;
+padding-left: 1em;
+padding-right: 1em;
+padding-bottom: 1em;
+}
+
+main a{
+	color: black;
+text-decoration: none;
+font-family: sans-serif;}
+
+
+section ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+}
+
+main section ul a{
+	color: #7f7f7f;
+	padding:14px 7px;
+	border: 1px solid #a9a9a9;
+	width: calc(110% - 18px);
+	margin-left: -1.2em;
+}
+
+main section ul li{
+	display: flex;
+	padding: 0.5em;
+}
+
+main section img:nth-of-type(1){
+	max-width: 325px;
+}

@@ -2,8 +2,6 @@
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-https://ryanscheers.github.io/FEDopdracht/ 
-
 Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
@@ -24,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Mijn focus is 'Surface'. Als ik het goed begrijp is dat met muziek, video etc.
+  Mijn focus is 'Responsive' design.
  
 </details>
 
@@ -59,10 +57,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <summary>Tijdens de les hebben de toegankelijkheid gestest van onze gekozen website. Tijdens het test van mijn Bruna site ben ik achter mogelijke verbeterpunten gekomen.</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  1. De bedragen van boeken worden niet voorgelezen. Als je een screenreader gebruikt kom je er niet achter hoe duur een boek is. 
+
+  2. Veel afbeeldingen worden niet uitgelegd. Zo staan er onder sommige boeken uitgebeeld met afbeeldingen van sterren wat mensen er van vinden. De screenreader leest dit niet voor.
+
+  3. Er staan ook geen € euro tekens in de screenreader. Ik weet niet of dit niet werkt in de screenreader of dat de Bruna vergeten is om dit er in te verwerken.
+
+  4. De titel van een boek worden heel vaak genoemd. Je hoort soms wel 3 keer de titel van een boeken. Ik denk dat 2 keer genoeg moet zijn.
+
+  Verder is de Bruna site goed te navigeren met de screenreader. Bijna alles heeft een alt tekst en de tekst is goed te begrijpen.
 
 </details>
 
@@ -71,7 +79,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+  <summary>Ik heb mijn breakdownschets in Figma gemaakt. Ik heb aan de linkerkant van de screenshot met kleuren de header, main en footer van elkaar onderscheden. Verder heb ik m.b.v. inspecteren gekeken hoe de Bruna site is opgebouwd en zo heb ik gekeken hoe ik de site zelf wil opbouwen</summary>
 
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
