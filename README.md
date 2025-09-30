@@ -39,16 +39,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   link: https://www.bruna.nl/alle/boeken 
   Dit is de home pagina van de website.
 
-  link: https://www.bruna.nl/bestverkocht/boeken
-  Deze pagina laat de populairste boeken zien.
+  link: https://www.bruna.nl/kantoor/notitieboek-pl-a5-leer-782249 
+  Dit is een product pagina
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina 
   <img src="readme-images/bruna-home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Populaire boeken.
-  <img src="readme-images/bruna-populair.png" width="375px" alt="omschrijving van de pagina">
+  Notitieboek PL A5 Leer
  
 </details>
 
@@ -57,7 +56,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>Tijdens de les hebben de toegankelijkheid gestest van onze gekozen website. Tijdens het test van mijn Bruna site ben ik achter mogelijke verbeterpunten gekomen.</summary>
+  <summary>Tijdens de les hebben de toegankelijkheid gestest van onze gekozen website. Tijdens het test van mijn Bruna site ben ikachter mogelijke verbeterpunten gekomen.</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
@@ -72,6 +71,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Verder is de Bruna site goed te navigeren met de screenreader. Bijna alles heeft een alt tekst en de tekst is goed te begrijpen.
 
+
+  Ook heeft de Bruna geen light- en darkmode. Mensen die moeite hebben met het contract kunnen hierdoor de site minder goed lezen.
+
+
 </details>
 
 
@@ -82,10 +85,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>Ik heb mijn breakdownschets in Figma gemaakt. Ik heb aan de linkerkant van de screenshot met kleuren de header, main en footer van elkaar onderscheden. Verder heb ik m.b.v. inspecteren gekeken hoe de Bruna site is opgebouwd en zo heb ik gekeken hoe ik de site zelf wil opbouwen</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdowneen.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdowntwee.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -104,24 +107,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Ik ben bezig met mijn html, maar om ik vind het lastig om te bepalen hoe ik dit moet opbouwen. Ik ben begonnen met sections maken met daarin articles en ik heb nu alle content van de Bruna pagina helemaal in html gezet.
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  We kregen deze week feedback van studentassistenten. We gingen 1 voor de studenten af.
+
+  Iedere stundent kreeg andere feedback en stelde andere vragen. Sommige vragen van andere studenten kwamen wel overeen met de vrgaen die ik had. 
+  Ik wist bijv. niet hoe ik een bepaalde section moest indelen op een handige manier om er css aan toe te kunnen voegen. Toen heb ik die feedback meteen toe gepast/verwerkt.
+
+  Een ander voorbeeld is dat een student voor mij feedback kreeg. Hij had sections gemaakt, maar had er geen heading ingezet. Hierdoor wist ik
+  ook waar mijn info/errors vandaan kwamen.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - punt 1: sections een heading geven.
+  - punt 2: nav element om in mijn header en main gebruiken.
+
 
 </details>
 
@@ -137,24 +143,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Hier had ik moeite met het maken van mijn eerste nav. Deze moest met behulp van javascript van rechts naar links inbeeld komen. Dit was echt heel lastig. Met de huiswerkopdracht die hier over ging was ik dicht bij het einde gekomen. Hierdoor kon ik hem ook niet op mijn eigen pagina toepassen.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Deze week waren er maar een paar studenten tijdens de feedback sessie. Ik heb tijdens deze sessie hulp gevraagd over mijn gebruik van het nav element in mijn main en verder heb ik om hulp gevraag over de layout van mijn horizontale slider. 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - punt 1: ellipses gebruiken om tekst in te korten en ... er achter te krijgen.
+  - punt 2: position absolute en relative gebruiken om z-index goed te laten werken.
 
 </details>
 
@@ -170,6 +170,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  De screenreader werkt beter op mijn pagina dan gedacht. Op sommige afbeeldingen werkte de screenreader niet heel goed. Dit lag aan mijn alt teksten die heel raar waren.
+
 </details>
 
 
@@ -184,24 +186,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Het uitklap menu onderin mijn main werkte niet. Daar kreeg ik echt heel veel stress van mijn uiteindelijk is het gelukt om het te maken.
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Ik heb aan een student assistent om hulp gevraagd bij mijn laaste uitklap menu, omdat die niet werkte.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
+  - punt 1: toggle gebruiken om alles beter te laten werken.
   - punt 2
-  - nog een punt
-  - ...
 
 </details>
 
@@ -215,13 +212,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/homepagina.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/productpagina.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
