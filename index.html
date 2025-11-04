@@ -11,6 +11,18 @@
 </head>
 
 <body>
+	<div class="loader"></div>
+	<!-- https://youtu.be/-HS9IIuT_Mo?si=Cra7jD4bGEvYLQgL 
+		 Gebruikt voor het maken van een loading screen. 
+	-->
+
+
+	<div class="scrollAnimation"></div>
+	<!-- https://youtu.be/UmzFk68Bwdk?si=M_JE9vZl8IP4FU69 
+		 Gebruikt voor het maken van een scroll animatie boven in het scherm. 
+	-->
+
+
 	<header>
 		<section>
 			<h1>
@@ -24,21 +36,21 @@
 			</h1>
 
 			<div>
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM6 8a6 6 0 1 1 12 0A6 6 0 0 1 6 8zm2 10a3 3 0 0 0-3 3 1 1 0 1 1-2 0 5 5 0 0 1 5-5h8a5 5 0 0 1 5 5 1 1 0 1 1-2 0 3 3 0 0 0-3-3H8z"
 						fill="#0D0D0D" />
 				</svg>
 				<a href="Inloggen">Inloggen</a>
 
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path fill-rule="evenodd" clip-rule="evenodd"
 						d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
 						stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 				</svg>
 				<a href="Favorietenlijstje">Favorietenlijstje</a>
 
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M5 7H19V17C19 18.6569 17.6569 20 16 20H8C6.34315 20 5 18.6569 5 17V7Z" stroke="#000000"
 						stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 					<path d="M9 10L9 11C9 12.6569 10.3431 14 12 14V14C13.6569 14 15 12.6569 15 11L15 10"
@@ -67,8 +79,7 @@
 				<svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect width="24" height="24" fill="white" />
 					<path d="M7 17L16.8995 7.10051" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
-					<path d="M7 7.00001L16.8995 16.8995" stroke="#000000" stroke-linecap="round"
-						stroke-linejoin="round" />
+					<path d="M7 7.00001L16.8995 16.8995" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
 				</svg>
 			</button>
 			<ul>
@@ -80,6 +91,16 @@
 				<li><a href="#">Spel & Speelgoed</a></li>
 				<li><a href="#">Aanbiedingen</a></li>
 				<li><a href="#">Folders</a></li>
+
+				<li class="tekstgrootte">
+				Tekstgrootte:
+				<button onclick="veranderTekstGrootte('klein')">A-</button>
+				<button onclick="veranderTekstGrootte('middel')">A</button>
+				<button onclick="veranderTekstGrootte('groot')">A+</button>
+				</li>
+				<!-- https://chatgpt.com/share/690204cb-6804-8000-a06d-ba77dd7bfc7e  
+					 Gebruikt voor hulp bij het maken van verschillende grootte lettertype. 
+				-->
 			</ul>
 		</nav>
 	</header>
@@ -107,6 +128,8 @@
 		<section>
 			<h2>Banner</h2>
 			<img src="./images/Herobanner-terug-in-je-ritme-2-25-BR.png" alt="Banner met vrouw in rood pak.">
+
+			<div>
 			<h3>Weer terug in je ritme</h3>
 			<p>Alles voor na je vakantie</p>
 			<svg height="20px" width="20px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
@@ -115,13 +138,14 @@
 					<polygon class="st0"
 						points="193.447,173.562 275.877,256 193.447,338.438 234.081,379.08 357.161,256 234.081,132.928 	" />
 					<path class="st0" d="M255.992,0C114.606,0.015,0.015,114.606,0,256c0.015,141.394,114.606,255.984,255.992,256
-		C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
-		c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
-		C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
-		c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
-		C471.782,315.647,447.672,369.474,408.585,408.585z" />
+					C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
+					c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
+					C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
+					c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
+					C471.782,315.647,447.672,369.474,408.585,408.585z" />
 				</g>
 			</svg>
+		</div>
 		</section>
 
 		<section>
@@ -134,11 +158,11 @@
 						<polygon class="st0"
 							points="193.447,173.562 275.877,256 193.447,338.438 234.081,379.08 357.161,256 234.081,132.928 	" />
 						<path class="st0" d="M255.992,0C114.606,0.015,0.015,114.606,0,256c0.015,141.394,114.606,255.984,255.992,256
-		C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
-		c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
-		C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
-		c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
-		C471.782,315.647,447.672,369.474,408.585,408.585z" />
+									C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
+									c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
+									C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
+									c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
+									C471.782,315.647,447.672,369.474,408.585,408.585z" />
 					</g>
 				</svg>
 				<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTgiIGhlaWdodD0iOTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4LjQ4IDU1LjJ2LTcuNjRsLS4wOC0yLjM0aC4wMmwxLjE0IDIuMjIgNC42MiA3Ljc2aDMuMTZWNDJoLTIuNDh2Ny42NGwuMDggMi4zNGgtLjA0bC0xLjE0LTIuMjRMMTkuMTQgNDJIMTZ2MTMuMmgyLjQ4Wm0xNS4wNiAwVjQyaC0yLjc2djEzLjJoMi43NlptMTMuNjIgMHYtMi4yMmgtNy40MnYtMy4zNmg1LjYyVjQ3LjVoLTUuNjJ2LTMuMjhoNy4xNFY0MmgtOS45djEzLjJoMTAuMThabTcuOTIuMmMxLjg1MyAwIDMuMjU3LS40NTMgNC4yMS0xLjM2Ljk1My0uOTA3IDEuNDMtMi4yNTMgMS40My00LjA0di04aC0yLjc4djcuODhjMCAxLjEwNy0uMjMzIDEuOTI3LS43IDIuNDYtLjQ2Ny41MzMtMS4xODcuOC0yLjE2LjgtLjk3MyAwLTEuNjk3LS4yNjctMi4xNy0uOC0uNDczLS41MzMtLjcxLTEuMzUzLS43MS0yLjQ2VjQyaC0yLjc2djhjMCAxLjc4Ny40NzcgMy4xMzMgMS40MyA0LjA0czIuMzU3IDEuMzYgNC4yMSAxLjM2Wm0xNC41NC0uMiAxLjgyLTcuMi42Mi0zLjEyaC4wNGwuNjIgMy4xMiAxLjg0IDcuMmgzLjFMODEuNSA0MmgtMi44NEw3Ni4xIDUzLjAyIDczLjQyIDQyaC0yLjY0bC0yLjY0IDExLjAyTDY1LjU4IDQySDYyLjZsMy44NCAxMy4yaDMuMThaIiBmaWxsPSIjMjQyNDI0IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4="
@@ -162,8 +186,7 @@
 	C471.782,315.647,447.672,369.474,408.585,408.585z" />
 					</g>
 				</svg>
-				<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTgiIGhlaWdodD0iOTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4LjQ4IDU1LjJ2LTcuNjRsLS4wOC0yLjM0aC4wMmwxLjE0IDIuMjIgNC42MiA3Ljc2aDMuMTZWNDJoLTIuNDh2Ny42NGwuMDggMi4zNGgtLjA0bC0xLjE0LTIuMjRMMTkuMTQgNDJIMTZ2MTMuMmgyLjQ4Wm0xNS4wNiAwVjQyaC0yLjc2djEzLjJoMi43NlptMTMuNjIgMHYtMi4yMmgtNy40MnYtMy4zNmg1LjYyVjQ3LjVoLTUuNjJ2LTMuMjhoNy4xNFY0MmgtOS45djEzLjJoMTAuMThabTcuOTIuMmMxLjg1MyAwIDMuMjU3LS40NTMgNC4yMS0xLjM2Ljk1My0uOTA3IDEuNDMtMi4yNTMgMS40My00LjA0di04aC0yLjc4djcuODhjMCAxLjEwNy0uMjMzIDEuOTI3LS43IDIuNDYtLjQ2Ny41MzMtMS4xODcuOC0yLjE2LjgtLjk3MyAwLTEuNjk3LS4yNjctMi4xNy0uOC0uNDczLS41MzMtLjcxLTEuMzUzLS43MS0yLjQ2VjQyaC0yLjc2djhjMCAxLjc4Ny40NzcgMy4xMzMgMS40MyA0LjA0czIuMzU3IDEuMzYgNC4yMSAxLjM2Wm0xNC41NC0uMiAxLjgyLTcuMi42Mi0zLjEyaC4wNGwuNjIgMy4xMiAxLjg0IDcuMmgzLjFMODEuNSA0MmgtMi44NEw3Ni4xIDUzLjAyIDczLjQyIDQyaC0yLjY0bC0yLjY0IDExLjAyTDY1LjU4IDQySDYyLjZsMy44NCAxMy4yaDMuMThaIiBmaWxsPSIjMjQyNDI0IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4="
-					alt="nieuw">
+				<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTgiIGhlaWdodD0iOTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE4LjQ4IDU1LjJ2LTcuNjRsLS4wOC0yLjM0aC4wMmwxLjE0IDIuMjIgNC42MiA3Ljc2aDMuMTZWNDJoLTIuNDh2Ny42NGwuMDggMi4zNGgtLjA0bC0xLjE0LTIuMjRMMTkuMTQgNDJIMTZ2MTMuMmgyLjQ4Wm0xNS4wNiAwVjQyaC0yLjc2djEzLjJoMi43NlptMTMuNjIgMHYtMi4yMmgtNy40MnYtMy4zNmg1LjYyVjQ3LjVoLTUuNjJ2LTMuMjhoNy4xNFY0MmgtOS45djEzLjJoMTAuMThabTcuOTIuMmMxLjg1MyAwIDMuMjU3LS40NTMgNC4yMS0xLjM2Ljk1My0uOTA3IDEuNDMtMi4yNTMgMS40My00LjA0di04aC0yLjc4djcuODhjMCAxLjEwNy0uMjMzIDEuOTI3LS43IDIuNDYtLjQ2Ny41MzMtMS4xODcuOC0yLjE2LjgtLjk3MyAwLTEuNjk3LS4yNjctMi4xNy0uOC0uNDczLS41MzMtLjcxLTEuMzUzLS43MS0yLjQ2VjQyaC0yLjc2djhjMCAxLjc4Ny40NzcgMy4xMzMgMS40MyA0LjA0czIuMzU3IDEuMzYgNC4yMSAxLjM2Wm0xNC41NC0uMiAxLjgyLTcuMi42Mi0zLjEyaC4wNGwuNjIgMy4xMiAxLjg0IDcuMmgzLjFMODEuNSA0MmgtMi44NEw3Ni4xIDUzLjAyIDczLjQyIDQyaC0yLjY0bC0yLjY0IDExLjAyTDY1LjU4IDQySDYyLjZsMy44NCAxMy4yaDMuMThaIiBmaWxsPSIjMjQyNDI0IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4="alt="nieuw">
 				<img src="./images/9789021056531.jpg" alt="Boek van Dan Brown.">
 			</article>
 
@@ -177,11 +200,11 @@
 						<polygon class="st0"
 							points="193.447,173.562 275.877,256 193.447,338.438 234.081,379.08 357.161,256 234.081,132.928 	" />
 						<path class="st0" d="M255.992,0C114.606,0.015,0.015,114.606,0,256c0.015,141.394,114.606,255.984,255.992,256
-	C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
-	c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
-	C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
-	c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
-	C471.782,315.647,447.672,369.474,408.585,408.585z" />
+				C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
+				c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
+				C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
+				c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
+				C471.782,315.647,447.672,369.474,408.585,408.585z" />
 					</g>
 				</svg>
 				<p>Nu voor 6.99</p>
@@ -205,15 +228,13 @@ c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152
 C471.782,315.647,447.672,369.474,408.585,408.585z" />
 					</g>
 				</svg>
-				<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTgiIGhlaWdodD0iOTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjk3OCA1Mi44NGMxLjE3IDAgMi4wMTUtLjM4NiAyLjUzNS0xLjE1N2wuMDM5IDEuMDI3aDEuMzEzdi00LjUzN2gtNC4wNTZ2MS4zMjZoMi41MDl2LjE5NWMwIC41NTUtLjE5Ljk3Ny0uNTcyIDEuMjY3LS4zODEuMjktLjg3NS40MzYtMS40ODIuNDM2LS43ODkgMC0xLjM4Ny0uMjUxLTEuNzk0LS43NTQtLjQwNy0uNTAzLS42MTEtMS4yNDQtLjYxMS0yLjIyMyAwLS45NDUuMjA4LTEuNjczLjYyNC0yLjE4NC40MTYtLjUxMS45OTctLjc2NyAxLjc0Mi0uNzY3LjQ4NSAwIC45LjExNSAxLjI0Mi4zNDQuMzQyLjIzLjU3OC41NjYuNzA4IDEuMDA4bDEuNjUxLS43MTVjLS4zMzgtLjcyOC0uOC0xLjI2MS0xLjM4NS0xLjU5OS0uNTg1LS4zMzgtMS4zNC0uNTA3LTIuMjY4LS41MDctLjg0IDAtMS41NzUuMTc4LTIuMjA0LjUzM2EzLjYxIDMuNjEgMCAwIDAtMS40NTUgMS41MzRDOC4xNyA0Ni43MzQgOCA0Ny41MjMgOCA0OC40MzNjMCAuOTE5LjE2NyAxLjcxLjUgMi4zNzMuMzM0LjY2My44IDEuMTY3IDEuMzk4IDEuNTE0LjU5OC4zNDcgMS4yOTEuNTIgMi4wOC41MlptMTIuNDY3LS4xM3YtMS40NDNoLTQuODIzdi0yLjE4NGgzLjY1M3YtMS4zNzhoLTMuNjUzdi0yLjEzMmg0LjY0MVY0NC4xM2gtNi40MzV2OC41OGg2LjYxN1ptNC43NzEuMTNjLjY4NSAwIDEuMjkzLS4xMDQgMS44MjYtLjMxMi41MzQtLjIwOC45NS0uNTA1IDEuMjQ4LS44OS4zLS4zODYuNDQ5LS44NDMuNDQ5LTEuMzcyIDAtLjQ4NS0uMTA2LS44OS0uMzE5LTEuMjE1LS4yMTItLjMyNi0uNTQ4LS41OTYtMS4wMDctLjgxMy0uNDYtLjIxNy0xLjA3OS0uMzk5LTEuODU5LS41NDYtLjc0NS0uMTMtMS4yNjEtLjI4Mi0xLjU0Ny0uNDU1LS4yODYtLjE3My0uNDI5LS40MDctLjQyOS0uNzAyIDAtLjMyLjE0LS41NzguNDIyLS43NzMuMjgyLS4xOTYuNjgzLS4yOTMgMS4yMDMtLjI5My41NzIgMCAxLjA0NC4xMTUgMS40MTcuMzQ0LjM3My4yMy42NzIuNTc5Ljg5NyAxLjA0N2wxLjIzNS0xLjIwOWMtLjQzMy0uNTcyLS45MzYtLjk5LTEuNTA4LTEuMjU1LS41NzItLjI2NC0xLjI1Ny0uMzk2LTIuMDU0LS4zOTYtLjcyIDAtMS4zNDYuMTE3LTEuODc5LjM1MS0uNTMyLjIzNC0uOTM4LjU1Ny0xLjIxNS45NjhhMi40MjIgMi40MjIgMCAwIDAtLjQxNiAxLjM4NWMwIC40ODUuMTA4Ljg5My4zMjUgMS4yMjIuMjE3LjMzLjU2Ni42MDcgMS4wNDcuODMyLjQ4LjIyNSAxLjEyNC40MiAxLjkzLjU4NS43MDIuMTM5IDEuMTkuMjg2IDEuNDYzLjQ0Mi4yNzMuMTU2LjQwOS4zNTEuNDA5LjU4NSAwIC4zMi0uMTQ1LjU2OC0uNDM1Ljc0MS0uMjkuMTczLS43MTMuMjYtMS4yNjguMjYtLjYxNSAwLTEuMTMxLS4xMDItMS41NDctLjMwNi0uNDE2LS4yMDMtLjc4NC0uNTctMS4xMDUtMS4wOThsLTEuMDY2IDEuMjc0Yy4zNzMuNTM3Ljg2LjkzOCAxLjQ2MiAxLjIwMy42MDMuMjY0IDEuMzc2LjM5NiAyLjMyMS4zOTZabTYuOTk0LS4xM3YtOC41OGgtMS43OTR2OC41OGgxLjc5NFptNS43ODUuMTNjMS4xNyAwIDIuMDE1LS4zODYgMi41MzUtMS4xNTdsLjAzOSAxLjAyN2gxLjMxM3YtNC41MzdoLTQuMDU2djEuMzI2aDIuNTA5di4xOTVjMCAuNTU1LS4xOS45NzctLjU3MiAxLjI2Ny0uMzgxLjI5LS44NzUuNDM2LTEuNDgyLjQzNi0uNzg5IDAtMS4zODctLjI1MS0xLjc5NC0uNzU0LS40MDctLjUwMy0uNjExLTEuMjQ0LS42MTEtMi4yMjMgMC0uOTQ1LjIwOC0xLjY3My42MjQtMi4xODQuNDE2LS41MTEuOTk3LS43NjcgMS43NDItLjc2Ny40ODUgMCAuOS4xMTUgMS4yNDIuMzQ0LjM0Mi4yMy41NzguNTY2LjcwOCAxLjAwOGwxLjY1MS0uNzE1Yy0uMzM4LS43MjgtLjgtMS4yNjEtMS4zODUtMS41OTktLjU4NC0uMzM4LTEuMzQtLjUwNy0yLjI2OC0uNTA3LS44NCAwLTEuNTc1LjE3OC0yLjIwMy41MzNhMy42MSAzLjYxIDAgMCAwLTEuNDU2IDEuNTM0Yy0uMzQzLjY2Ny0uNTE0IDEuNDU2LS41MTQgMi4zNjYgMCAuOTE5LjE2NyAxLjcxLjUgMi4zNzMuMzM0LjY2My44IDEuMTY3IDEuMzk4IDEuNTE0LjU5OC4zNDcgMS4yOTEuNTIgMi4wOC41MlptNy40NjItLjEzdi00Ljk2NmwtLjA1Mi0xLjUyMWguMDEzbC43NDEgMS40NDMgMy4wMDMgNS4wNDRoMi4wNTR2LTguNThoLTEuNjEydjQuOTY2bC4wNTIgMS41MjFoLS4wMjZsLS43NDEtMS40NTYtMy4wMDMtNS4wMzFoLTIuMDQxdjguNThoMS42MTJabTE0LjYxMiAwdi0xLjQ0M2gtNC44MjN2LTIuMTg0aDMuNjUzdi0xLjM3OGgtMy42NTN2LTIuMTMyaDQuNjQxVjQ0LjEzaC02LjQzNXY4LjU4aDYuNjE3Wm04LjIyOSAwdi0xLjQ0M2gtNC44MjN2LTIuMTg0aDMuNjUzdi0xLjM3OGgtMy42NTN2LTIuMTMyaDQuNjQxVjQ0LjEzaC02LjQzNXY4LjU4aDYuNjE3Wm0zLjM4IDB2LTMuMjg5aDEuNjEybDIuMDE1IDMuMjg5aDIuMDE1bC0yLjI2Mi0zLjQ4NGMuNTYzLS4xODIuOTk3LS40ODEgMS4zLS44OTcuMzAzLS40MTYuNDU1LS45MzIuNDU1LTEuNTQ3IDAtLjg0LS4yNzUtMS40OTMtLjgyNi0xLjk1Ni0uNTUtLjQ2NC0xLjMxNS0uNjk2LTIuMjk0LS42OTZINzMuOTF2OC41OGgxLjc2OFptMS43ODEtNC42NTRoLTEuNzgxVjQ1LjU2aDEuNzgxYy41MiAwIC45MDMuMTAyIDEuMTUuMzA1LjI0OC4yMDQuMzcxLjUxOC4zNzEuOTQzIDAgLjQyNS0uMTI0LjczOS0uMzcuOTQzLS4yNDguMjAzLS42MzEuMzA1LTEuMTUxLjMwNVptOC42MDYgNC42NTRjMS4zNDMgMCAyLjM4My0uMzczIDMuMTItMS4xMTguNzM3LS43NDUgMS4xMDUtMS44MDMgMS4xMDUtMy4xNzIgMC0xLjM3LS4zNjgtMi40MjctMS4xMDUtMy4xNzItLjczNy0uNzQ1LTEuNzc3LTEuMTE4LTMuMTItMS4xMThIODIuNzV2OC41OGgzLjMxNVptLS4wOTEtMS40M2gtMS40M3YtNS43MmgxLjQzYy44MTUgMCAxLjQyOC4yNDUgMS44NC43MzQuNDExLjQ5LjYxNyAxLjE5OS42MTcgMi4xMjYgMCAuOTI3LS4yMDYgMS42MzYtLjYxNyAyLjEyNS0uNDEyLjQ5LTEuMDI1LjczNS0xLjg0LjczNVoiIGZpbGw9IiMyNDI0MjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvc3ZnPg=="
-					alt="gesigneerd">
+				<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTgiIGhlaWdodD0iOTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExLjk3OCA1Mi44NGMxLjE3IDAgMi4wMTUtLjM4NiAyLjUzNS0xLjE1N2wuMDM5IDEuMDI3aDEuMzEzdi00LjUzN2gtNC4wNTZ2MS4zMjZoMi41MDl2LjE5NWMwIC41NTUtLjE5Ljk3Ny0uNTcyIDEuMjY3LS4zODEuMjktLjg3NS40MzYtMS40ODIuNDM2LS43ODkgMC0xLjM4Ny0uMjUxLTEuNzk0LS43NTQtLjQwNy0uNTAzLS42MTEtMS4yNDQtLjYxMS0yLjIyMyAwLS45NDUuMjA4LTEuNjczLjYyNC0yLjE4NC40MTYtLjUxMS45OTctLjc2NyAxLjc0Mi0uNzY3LjQ4NSAwIC45LjExNSAxLjI0Mi4zNDQuMzQyLjIzLjU3OC41NjYuNzA4IDEuMDA4bDEuNjUxLS43MTVjLS4zMzgtLjcyOC0uOC0xLjI2MS0xLjM4NS0xLjU5OS0uNTg1LS4zMzgtMS4zNC0uNTA3LTIuMjY4LS41MDctLjg0IDAtMS41NzUuMTc4LTIuMjA0LjUzM2EzLjYxIDMuNjEgMCAwIDAtMS40NTUgMS41MzRDOC4xNyA0Ni43MzQgOCA0Ny41MjMgOCA0OC40MzNjMCAuOTE5LjE2NyAxLjcxLjUgMi4zNzMuMzM0LjY2My44IDEuMTY3IDEuMzk4IDEuNTE0LjU5OC4zNDcgMS4yOTEuNTIgMi4wOC41MlptMTIuNDY3LS4xM3YtMS40NDNoLTQuODIzdi0yLjE4NGgzLjY1M3YtMS4zNzhoLTMuNjUzdi0yLjEzMmg0LjY0MVY0NC4xM2gtNi40MzV2OC41OGg2LjYxN1ptNC43NzEuMTNjLjY4NSAwIDEuMjkzLS4xMDQgMS44MjYtLjMxMi41MzQtLjIwOC45NS0uNTA1IDEuMjQ4LS44OS4zLS4zODYuNDQ5LS44NDMuNDQ5LTEuMzcyIDAtLjQ4NS0uMTA2LS44OS0uMzE5LTEuMjE1LS4yMTItLjMyNi0uNTQ4LS41OTYtMS4wMDctLjgxMy0uNDYtLjIxNy0xLjA3OS0uMzk5LTEuODU5LS41NDYtLjc0NS0uMTMtMS4yNjEtLjI4Mi0xLjU0Ny0uNDU1LS4yODYtLjE3My0uNDI5LS40MDctLjQyOS0uNzAyIDAtLjMyLjE0LS41NzguNDIyLS43NzMuMjgyLS4xOTYuNjgzLS4yOTMgMS4yMDMtLjI5My41NzIgMCAxLjA0NC4xMTUgMS40MTcuMzQ0LjM3My4yMy42NzIuNTc5Ljg5NyAxLjA0N2wxLjIzNS0xLjIwOWMtLjQzMy0uNTcyLS45MzYtLjk5LTEuNTA4LTEuMjU1LS41NzItLjI2NC0xLjI1Ny0uMzk2LTIuMDU0LS4zOTYtLjcyIDAtMS4zNDYuMTE3LTEuODc5LjM1MS0uNTMyLjIzNC0uOTM4LjU1Ny0xLjIxNS45NjhhMi40MjIgMi40MjIgMCAwIDAtLjQxNiAxLjM4NWMwIC40ODUuMTA4Ljg5My4zMjUgMS4yMjIuMjE3LjMzLjU2Ni42MDcgMS4wNDcuODMyLjQ4LjIyNSAxLjEyNC40MiAxLjkzLjU4NS43MDIuMTM5IDEuMTkuMjg2IDEuNDYzLjQ0Mi4yNzMuMTU2LjQwOS4zNTEuNDA5LjU4NSAwIC4zMi0uMTQ1LjU2OC0uNDM1Ljc0MS0uMjkuMTczLS43MTMuMjYtMS4yNjguMjYtLjYxNSAwLTEuMTMxLS4xMDItMS41NDctLjMwNi0uNDE2LS4yMDMtLjc4NC0uNTctMS4xMDUtMS4wOThsLTEuMDY2IDEuMjc0Yy4zNzMuNTM3Ljg2LjkzOCAxLjQ2MiAxLjIwMy42MDMuMjY0IDEuMzc2LjM5NiAyLjMyMS4zOTZabTYuOTk0LS4xM3YtOC41OGgtMS43OTR2OC41OGgxLjc5NFptNS43ODUuMTNjMS4xNyAwIDIuMDE1LS4zODYgMi41MzUtMS4xNTdsLjAzOSAxLjAyN2gxLjMxM3YtNC41MzdoLTQuMDU2djEuMzI2aDIuNTA5di4xOTVjMCAuNTU1LS4xOS45NzctLjU3MiAxLjI2Ny0uMzgxLjI5LS44NzUuNDM2LTEuNDgyLjQzNi0uNzg5IDAtMS4zODctLjI1MS0xLjc5NC0uNzU0LS40MDctLjUwMy0uNjExLTEuMjQ0LS42MTEtMi4yMjMgMC0uOTQ1LjIwOC0xLjY3My42MjQtMi4xODQuNDE2LS41MTEuOTk3LS43NjcgMS43NDItLjc2Ny40ODUgMCAuOS4xMTUgMS4yNDIuMzQ0LjM0Mi4yMy41NzguNTY2LjcwOCAxLjAwOGwxLjY1MS0uNzE1Yy0uMzM4LS43MjgtLjgtMS4yNjEtMS4zODUtMS41OTktLjU4NC0uMzM4LTEuMzQtLjUwNy0yLjI2OC0uNTA3LS44NCAwLTEuNTc1LjE3OC0yLjIwMy41MzNhMy42MSAzLjYxIDAgMCAwLTEuNDU2IDEuNTM0Yy0uMzQzLjY2Ny0uNTE0IDEuNDU2LS41MTQgMi4zNjYgMCAuOTE5LjE2NyAxLjcxLjUgMi4zNzMuMzM0LjY2My44IDEuMTY3IDEuMzk4IDEuNTE0LjU5OC4zNDcgMS4yOTEuNTIgMi4wOC41MlptNy40NjItLjEzdi00Ljk2NmwtLjA1Mi0xLjUyMWguMDEzbC43NDEgMS40NDMgMy4wMDMgNS4wNDRoMi4wNTR2LTguNThoLTEuNjEydjQuOTY2bC4wNTIgMS41MjFoLS4wMjZsLS43NDEtMS40NTYtMy4wMDMtNS4wMzFoLTIuMDQxdjguNThoMS42MTJabTE0LjYxMiAwdi0xLjQ0M2gtNC44MjN2LTIuMTg0aDMuNjUzdi0xLjM3OGgtMy42NTN2LTIuMTMyaDQuNjQxVjQ0LjEzaC02LjQzNXY4LjU4aDYuNjE3Wm04LjIyOSAwdi0xLjQ0M2gtNC44MjN2LTIuMTg0aDMuNjUzdi0xLjM3OGgtMy42NTN2LTIuMTMyaDQuNjQxVjQ0LjEzaC02LjQzNXY4LjU4aDYuNjE3Wm0zLjM4IDB2LTMuMjg5aDEuNjEybDIuMDE1IDMuMjg5aDIuMDE1bC0yLjI2Mi0zLjQ4NGMuNTYzLS4xODIuOTk3LS40ODEgMS4zLS44OTcuMzAzLS40MTYuNDU1LS45MzIuNDU1LTEuNTQ3IDAtLjg0LS4yNzUtMS40OTMtLjgyNi0xLjk1Ni0uNTUtLjQ2NC0xLjMxNS0uNjk2LTIuMjk0LS42OTZINzMuOTF2OC41OGgxLjc2OFptMS43ODEtNC42NTRoLTEuNzgxVjQ1LjU2aDEuNzgxYy41MiAwIC45MDMuMTAyIDEuMTUuMzA1LjI0OC4yMDQuMzcxLjUxOC4zNzEuOTQzIDAgLjQyNS0uMTI0LjczOS0uMzcuOTQzLS4yNDguMjAzLS42MzEuMzA1LTEuMTUxLjMwNVptOC42MDYgNC42NTRjMS4zNDMgMCAyLjM4My0uMzczIDMuMTItMS4xMTguNzM3LS43NDUgMS4xMDUtMS44MDMgMS4xMDUtMy4xNzIgMC0xLjM3LS4zNjgtMi40MjctMS4xMDUtMy4xNzItLjczNy0uNzQ1LTEuNzc3LTEuMTE4LTMuMTItMS4xMThIODIuNzV2OC41OGgzLjMxNVptLS4wOTEtMS40M2gtMS40M3YtNS43MmgxLjQzYy44MTUgMCAxLjQyOC4yNDUgMS44NC43MzQuNDExLjQ5LjYxNyAxLjE5OS42MTcgMi4xMjYgMCAuOTI3LS4yMDYgMS42MzYtLjYxNyAyLjEyNS0uNDEyLjQ5LTEuMDI1LjczNS0xLjg0LjczNVoiIGZpbGw9IiMyNDI0MjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvc3ZnPg=="alt="gesigneerd">
 				<img src="./images/8717439155578.jpg" alt="Boek van Sander Aarts">
 			</article>
 
 			<article>
 				<h2>Duik in King's wereld, met korting</h2>
 				<p>Kies je favorieten en bespaar</p>
-				<p>Actie geldig t/m 2 oktober</p>
 				<svg height="20" width="20" version="1.1" xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
 					<g>
@@ -227,9 +248,18 @@ c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152
 C471.782,315.647,447.672,369.474,408.585,408.585z" />
 					</g>
 				</svg>
-				<p>2+1 Gratis</p>
 				<img src="./images/9789049207595.jpg" alt="Boek Stephen King 1">
 			</article>
+
+				<video controls src="video/brunavideo.mp4">Bruna video</video>
+			
+				<div>
+					<button class="play">⏯️</button>
+					<button class="mute">🔇</button>
+					<button class="restart">⏮️</button>
+				</div>
+
+
 		</section>
 
 		<section>
@@ -245,35 +275,35 @@ C471.782,315.647,447.672,369.474,408.585,408.585z" />
 							alt="Boek 1 van Dan Brown. Titel Het ultieme geheim"></a>
 					<h4>Het ultieme geheim</h4>
 					<p>Dan Brown</p>
-					<p>€29,99</p>
+					<p>29,99</p>
 				</article>
 
 				<article>
 					<a href="#"><img src="./images/9789002282102.jpg" alt="Boek 2 De correcte krimson"></a>
 					<h4>De correcte krimson</h4>
 					<p>Peter van Gucht</p>
-					<p>€7,99</p>
+					<p>7,99</p>
 				</article>
 
 				<article>
 					<a href="#"><img src="./images/9789049206444.jpg" alt="Boek 3 Niets is wat het lijkt"></a>
 					<h4>Niets is wat het lijkt</h4>
 					<p>Conny Schalke</p>
-					<p>€22,95</p>
+					<p>22,95</p>
 				</article>
 
 				<article>
 					<a href="#"><img src="./images/9789002281174.jpg" alt="Boek 4 Doodvonnis"></a>
 					<h4>Doodvonnis</h4>
 					<p>Legendre, Willy Vandersteen</p>
-					<p>€8,99</p>
+					<p>8,99</p>
 				</article>
 
 				<article>
 					<a href="#"><img src="./images/9789022341674.jpg" alt="Boek 5 Waar de zon de sneeuw raakt"></a>
 					<h4>Waar de zon de sneeuw raakt</h4>
 					<p>Melissa Da Costa</p>
-					<p>€25,99</p>
+					<p>25,99</p>
 				</article>
 
 				<article>
@@ -281,14 +311,14 @@ C471.782,315.647,447.672,369.474,408.585,408.585z" />
 							alt="Boek 6 Hoe overleef ik alles wat anders gaat dan gedacht?"></a>
 					<h4>Hoe overleef ik alles wat anders gaat dan gedacht?</h4>
 					<p>Fancine Oomen</p>
-					<p>€22,50</p>
+					<p>22,50</p>
 				</article>
 
 				<article>
 					<a href="#"><img src="./images/9789048874927.jpg" alt="Boek 7 De zwevende wereld"></a>
 					<h4>De zwevende wereld</h4>
 					<p>Annejet van der Zijl</p>
-					<p>€26,99</p>
+					<p>26,99</p>
 				</article>
 			</div>
 		</section>
@@ -303,12 +333,8 @@ C471.782,315.647,447.672,369.474,408.585,408.585z" />
 						<ul>
 							<li><img src="./images/9789021056531.jpg" alt="Het ultieme geheim"></li>
 							<li><img src="./images/9789049206444.jpg" alt="Niets is wat het lijkt"></li>
-							<li><img src="./images/9789062225644.jpg"
-									alt="Hoe overleef ik alles wat anders gaat dan gedacht?">
-							</li>
-							<li>
-								<h3>Bruna top 10</h3>
-							</li>
+							<li><img src="./images/9789062225644.jpg" alt="Hoe overleef ik alles wat anders gaat dan gedacht?"></li>
+							<li><h3>Bruna top 10</h3></li>
 						</ul>
 					</a>
 				</article>
@@ -319,9 +345,7 @@ C471.782,315.647,447.672,369.474,408.585,408.585z" />
 							<li><img src="./images/9789021056531.jpg" alt="Het ultieme geheim"></li>
 							<li><img src="./images/9789021056531.jpg" alt="Het ultieme geheim"></li>
 							<li><img src="./images/9789460686696.jpg" alt="Duinhuisje"></li>
-							<li>
-								<h3>Thrillers top 10</h3>
-							</li>
+							<li><h3>Thrillers top 10</h3></li>
 						</ul>
 					</a>
 				</article>
@@ -332,9 +356,7 @@ C471.782,315.647,447.672,369.474,408.585,408.585z" />
 							<li><img src="./images/9789030510765.jpg" alt="Boek van Rutger, Thomas en Paco."></li>
 							<li><img src="./images/9789043938747.jpg" alt="De Zoete Zusjes gaan op avontuur"></li>
 							<li><img src="./images/9789025780371.jpg" alt="Het huis van Dikkie Dik"></li>
-							<li>
-								<h3>Kinderboeken top 10</h3>
-							</li>
+							<li><h3>Kinderboeken top 10</h3></li>
 						</ul>
 					</a>
 				</article>
@@ -345,26 +367,24 @@ C471.782,315.647,447.672,369.474,408.585,408.585z" />
 							<li><img src="./images/9789043940047.jpg" alt="Het ultieme broodjes boek"></li>
 							<li><img src="./images/9789062224586.jpg" alt="Gezond met dokter Elise"></li>
 							<li><img src="./images/9789020981612.jpg" alt="een pan"></li>
-							<li>
-								<h3>Kookboeken top 10</h3>
-							</li>
+							<li><h3>Kookboeken top 10</h3></li>
 						</ul>
 					</a>
 				</article>
 
 				<article>
 					<a href="#">
-						<svg height="40" width="40" version="1.1" xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+						<svg height="40" width="40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 0 512 512" xml:space="preserve">
 							<g>
 								<polygon class="st0"
 									points="193.447,173.562 275.877,256 193.447,338.438 234.081,379.08 357.161,256 234.081,132.928 	" />
 								<path class="st0" d="M255.992,0C114.606,0.015,0.015,114.606,0,256c0.015,141.394,114.606,255.984,255.992,256
-C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
-c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
-C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
-c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
-C471.782,315.647,447.672,369.474,408.585,408.585z" />
+						C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
+						c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
+						C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
+						c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
+						C471.782,315.647,447.672,369.474,408.585,408.585z" />
 							</g>
 						</svg>
 						<h3>Alle Boeken Top 10 lijsten</h3>
@@ -377,57 +397,64 @@ C471.782,315.647,447.672,369.474,408.585,408.585z" />
 			<article>
 				<h3>Razend populair op TikTok</h3>
 				<p>#BookTok boeken</p>
-				<svg height="20" width="20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+				<svg height="20" width="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 0 512 512" xml:space="preserve">
 					<g>
 						<polygon class="st0"
 							points="193.447,173.562 275.877,256 193.447,338.438 234.081,379.08 357.161,256 234.081,132.928 	" />
 						<path class="st0" d="M255.992,0C114.606,0.015,0.015,114.606,0,256c0.015,141.394,114.606,255.984,255.992,256
-C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
-c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
-C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
-c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
-C471.782,315.647,447.672,369.474,408.585,408.585z" />
+				C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
+				c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
+				C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
+				c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
+				C471.782,315.647,447.672,369.474,408.585,408.585z" />
 					</g>
 				</svg>
-				<img src="./images/9780358668091.jpg" alt="These hollow vows">
-				<img src="./images/MDB-Front-image-Tiktok-logo.png" alt="TikTok logo">
+
+<div class="inkorten">
+	<img src="./images/9780358668091.jpg" alt="These hollow vows">
+	<img src="./images/MDB-Front-image-Tiktok-logo.png" alt="TikTok logo">
+</div>
+
+
 			</article>
 
 			<article>
 				<h3>Ontdek onze nieuwe folders</h3>
 				<p>Verrassend en inspirerend</p>
-				<svg height="20" width="20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+				<svg height="20" width="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 0 512 512" xml:space="preserve">
 					<g>
 						<polygon class="st0"
 							points="193.447,173.562 275.877,256 193.447,338.438 234.081,379.08 357.161,256 234.081,132.928 	" />
 						<path class="st0" d="M255.992,0C114.606,0.015,0.015,114.606,0,256c0.015,141.394,114.606,255.984,255.992,256
-C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
-c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
-C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
-c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
-C471.782,315.647,447.672,369.474,408.585,408.585z" />
+				C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
+				c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
+				C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
+				c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
+				C471.782,315.647,447.672,369.474,408.585,408.585z" />
 					</g>
 				</svg>
+			<div class="inkorten">
 				<img src="./images/MDB-Bruna-folders-V1.png" alt="Folders">
+			</div>
 			</article>
 		</section>
 
 		<section>
 			<h4>Meer genres</h4>
 			<button>
-				<svg height="20" width="20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+				<svg height="20" width="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewBox="0 0 512 512" xml:space="preserve">
 					<g>
 						<polygon class="st0"
 							points="193.447,173.562 275.877,256 193.447,338.438 234.081,379.08 357.161,256 234.081,132.928 	" />
 						<path class="st0" d="M255.992,0C114.606,0.015,0.015,114.606,0,256c0.015,141.394,114.606,255.984,255.992,256
-C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
-c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
-C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
-c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
-C471.782,315.647,447.672,369.474,408.585,408.585z" />
+				C397.394,511.984,511.985,397.394,512,256C511.985,114.606,397.394,0.015,255.992,0z M408.585,408.585
+				c-39.118,39.079-92.938,63.189-152.593,63.205c-59.647-0.016-113.467-24.126-152.577-63.205
+				C64.328,369.474,40.218,315.647,40.21,256c0.008-59.655,24.118-113.475,63.205-152.585c39.11-39.087,92.93-63.197,152.577-63.205
+				c59.655,0.008,113.476,24.118,152.593,63.205c39.087,39.11,63.197,92.93,63.205,152.585
+				C471.782,315.647,447.672,369.474,408.585,408.585z" />
 					</g>
 				</svg>
 			</button>
@@ -578,7 +605,6 @@ C471.782,315.647,447.672,369.474,408.585,408.585z" />
 		</section>
 
 		<section>
-			<img src="./images/webshopaward.png" alt="webshop award 2024-2025">
 			<h3>winnaar webshop award 2024-2025</h3>
 			<p>Categorie leeswaren</p>
 		</section>
@@ -599,7 +625,7 @@ C471.782,315.647,447.672,369.474,408.585,408.585z" />
 		<a href="#">Algemene voorwaarden</a>
 		<a href="#">Privacy</a>
 		<a href="#">Cookies</a>
-		<a href="#">Disclaimer</a>
+		<a href="paginatwee.html">Disclaimer</a>
 
 		<p>@ 2025 Bruna</p>
 	</footer>

@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Mijn focus is 'Responsive' design.
+  Mijn focus is 'Surface' design.
  
 </details>
 
@@ -212,19 +212,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/homepagina.png" width="375px" alt="uitomst opdracht 1">
+
+  Sorry ik begrijp echt niet wat ik hier moet doen.
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  
+  Bij het FED heb ik aan het begin zo veel moeite gehad met opstarten, maar de laatste weken had ik wel het gevoel.
+  Het maken van de opdrachten en bezig zijn met het maken van de site heeft er uiteindelijk voor gezorgd dat ik nu veel beter begrijp hoe ik code moet schrijven en wat de logische stappen daarvan zijn.
 
-  <img src="readme-images/productpagina.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ik wilde eerst voor mijn site een responsive desgin maken, maar toen ik daar aan begon vond ik het wel heel ingewikkeld. Ik heb er daarom uiteindlijk voor gekozen om aan de surface plane te werken. Ik had liever mijn site responsive gemaakt als ik iets meer tijd had.
 </details>
 
 
@@ -240,8 +243,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. <!-- https://youtu.be/-HS9IIuT_Mo?si=Cra7jD4bGEvYLQgL 
+		 Gebruikt voor het maken van een loading screen. 
+	-->
+  2. <!-- https://youtu.be/UmzFk68Bwdk?si=M_JE9vZl8IP4FU69 
+		 Gebruikt voor het maken van een scroll animatie boven in het scherm. 
+	--> 
+  3. <!-- https://chatgpt.com/share/690204cb-6804-8000-a06d-ba77dd7bfc7e  
+					 Gebruikt voor hulp bij het maken van verschillende grootte lettertype. 
+				--> 
+  <!-- 4.  https://chatgpt.com/share/690202bc-d41c-8000-81d3-42ef6e25ed58 
+ Ik heb voor het maken van deze knoppen chatgtp om hulp gevraagd. -->
 
 </details>
